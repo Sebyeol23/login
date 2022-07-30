@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/index.css">
+    <script src="/js/home/memo.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    여기는 루트입니다.
+    <div class="title">
+        <span>안녕하세요. 이명근 아카이브입니다.</span>
+        <span>
+            <img src="/image/dog.jpg">
+        </span>
+        <a href="/login">로그인</a>
+        <a href="/register">회원가입</a>
+    </div>
+    <div class="link">
+        <a href="https://www.youtube.com/channel/UCiKaJUEG106086my5hV0IjQ">이명근 유튜브 채널 바로가기</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>메모</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td id="first"><%= first %></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="second"><%= second %></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="third"><%= third %></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="memo">
+        <div>방명록 남기기</div>
+        <div>
+            <input id = "memo" type="text">
+            <button>등록</button>
+        </div>
+    </div>
 </body>
 </html>
